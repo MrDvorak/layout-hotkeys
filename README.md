@@ -9,6 +9,10 @@ what is not a convenient way for more than two different input layouts.
 
 Press **Shift + Alt + *N***, and the input layout number ***N*** will be selected.
 
+## Installation
+
+The extension is available on [GNOME Extensions](https://extensions.gnome.org/extension/6804/layout-hotkeys/).
+
 ## Manual Intallation
 
 ~~~ bash

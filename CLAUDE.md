@@ -25,3 +25,5 @@ Key coupling to keep consistent when changing the number of hotkeys: the `NUM_HO
 ## GNOME version updates
 
 The recurring maintenance task (see git history) is bumping to a new GNOME Shell release: update `shell-version` and `version-name` in `src/metadata.json`, verify the imports from `resource:///org/gnome/shell/...` still resolve in the new Shell, and confirm `getInputSourceManager`/`inputSources` APIs are unchanged.
+
+The extension is published on GNOME Extensions as id **6804** (https://extensions.gnome.org/extension/6804/layout-hotkeys/); a version bump is typically followed by uploading a new release there.

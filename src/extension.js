@@ -37,7 +37,7 @@ export default class LayoutHotkeysExtension extends Extension {
     }
 
     _switchToLayout(id) {
-        let inputSources = getInputSourceManager().inputSources;
+        const inputSources = getInputSourceManager().inputSources;
         if (id in inputSources)
             inputSources[id].activate();
     }

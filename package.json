@@ -1,8 +1,14 @@
 {
   "name": "layout-hotkeys",
   "main": "extension.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint"
+  },
   "devDependencies": {
-    "eslint": "^9.35.0",
-    "eslint-plugin-jsdoc": "^57.0.8"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "eslint-plugin-jsdoc": "^65.3.12"
   }
 }

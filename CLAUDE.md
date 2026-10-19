@@ -8,7 +8,7 @@ A **GNOME Shell** extension that binds direct hotkeys (default `Shift + Alt + 1.
 
 ## Commands
 
-- **Lint:** `ESLINT_USE_FLAT_CONFIG=false npx eslint src/` — the project uses a legacy `.eslintrc.yml` (which extends the GJS/GNOME Shell rule sets in `lint/`), so the env var is required for ESLint 9 to read it. There is no `lint` npm script.
+- **Lint:** `npm run lint` (or `npx eslint`) — ESLint 10 flat config in `eslint.config.js`, mirroring GNOME Shell's `tools/eslint.config.js`. The base rule sets in `lint/` are vendored from upstream [eslint-config-gnome](https://gitlab.gnome.org/World/javascript/eslint-config-gnome) (not on npm, and pinned to ESLint 9 upstream). Node comes from mise; no project version is pinned, so `npm`/`npx` fail until one is selected (e.g. `mise use node@22`).
 - **Install locally:** `./install.sh` — copies `src/*` into `~/.local/share/gnome-shell/extensions/<uuid>` and compiles the GSettings schema with `glib-compile-schemas`. Refuses to run as root and refuses to overwrite an existing install. Requires `jq`.
 - **Activate after install:** re-log into GNOME Shell, then enable "Layout Hotkeys" in the Extensions app. There is no automated test suite or build step.
 
